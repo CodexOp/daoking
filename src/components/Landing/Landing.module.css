@@ -100,6 +100,7 @@
 
 .stakingCardFieldBody {
   font-weight: 500;
+  text-align: right;
 }
 
 .stakingTokenFieldBody {
@@ -165,4 +166,47 @@
   font-weight: 600;
   font-family: "Poppins";
   cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .stakingWrapper {
+    max-width: 100%;
+  }
+  .contentWrapper {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Landing {
+    flex-direction: column;
+    height: max-content;
+  }
+  .contentSection {
+    max-width: 100%;
+  }
+  .stakingSection {
+    max-width: 100%;
+    align-items: center;
+  }
+  .stakingWrapper {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+  .stakingCard {
+    height: 100%;
+    margin-bottom: 4rem;
+  }
+  .stakingCardField {
+    margin-top: 1rem;
+  }
+  .stakingCardVerticalField {
+    margin-top: 1rem;
+  }
+  .stakingButtons {
+    margin-top: 2rem;
+  }
+  .emergencyWithdrawButton {
+    margin-top: 1rem;
+  }
 }

@@ -2,7 +2,7 @@
   background-color: #1c1d39;
   width: 100%;
   height: 100%;
-  max-height: 55px;
+  max-height: 60px;
   display: flex;
   justify-content: center;
 }
@@ -13,12 +13,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navLogoContent {
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  width: max-content;
   align-items: center;
   height: 100%;
 }
@@ -36,11 +37,9 @@
 .navButtons {
   width: fit-content;
   height: 100%;
-  width: 100%;
-  max-width: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
