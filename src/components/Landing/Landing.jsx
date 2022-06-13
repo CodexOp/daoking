@@ -4,6 +4,7 @@ import Progressbar from "./Progressbar/Progressbar";
 import styles from "./Landing.module.css";
 
 const Landing = () => {
+  const [screenWidth] = React.useState(window.innerWidth);
   return (
     <div className={styles.LandingContainer}>
       <div className={styles.Landing}>
@@ -21,8 +22,18 @@ const Landing = () => {
               aliquip ex ea commodo
             </p>
             <div className={styles.contentCards}>
-              <Card header="APY in Percentage" body="24% APY" />
-              <Card header="Current Token Price" body="1.384 USDT" />
+              <Card
+                header="APY in Percentage"
+                body="24% APY"
+                style={screenWidth <= 900 ? { borderTopLeftRadius: "8px" } : {}}
+              />
+              <Card
+                header="Current Token Price"
+                body="1.384 USDT"
+                style={
+                  screenWidth <= 900 ? { borderTopRightRadius: "8px" } : {}
+                }
+              />
             </div>
           </div>
         </div>
@@ -32,12 +43,12 @@ const Landing = () => {
               <Card
                 header="Min Staking Amount"
                 body="50 USDT"
-                style={{ borderTopLeftRadius: "8px" }}
+                style={screenWidth > 900 ? { borderTopLeftRadius: "8px" } : {}}
               />
               <Card
                 header="Max Staking Amount"
                 body="500 USDT"
-                style={{ borderTopRightRadius: "8px" }}
+                style={screenWidth > 900 ? { borderTopRightRadius: "8px" } : {}}
               />
             </div>
             <div className={styles.stakingCard}>

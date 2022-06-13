@@ -209,4 +209,18 @@
   .emergencyWithdrawButton {
     margin-top: 1rem;
   }
+  .contentDescription {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contentHeader {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .contentDescription {
+    font-size: 1.1rem;
+  }
 }
