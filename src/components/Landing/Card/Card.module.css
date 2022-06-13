@@ -1,0 +1,16 @@
+.Card {
+  background-color: #1c1d39;
+  width: 100%;
+  max-width: 50%;
+  padding: 0.5rem 0.7rem;
+}
+
+.CardHeader {
+  font-size: 0.9rem;
+}
+
+.CardBody {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #00c88c;
+}
