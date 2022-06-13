@@ -30,6 +30,7 @@
 }
 
 .navLogoContent > h2 {
+  display: block;
   font-family: "Montserrat";
   font-weight: 600;
 }
@@ -59,4 +60,25 @@
 .connectButton {
   background-color: #00c88c;
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navButton {
+    width: 80px;
+    padding: 2px 4px;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navButton {
+    width: 80px;
+    padding: 2px 4px;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .navLogoContent > h2 {
+    display: none;
+  }
 }
